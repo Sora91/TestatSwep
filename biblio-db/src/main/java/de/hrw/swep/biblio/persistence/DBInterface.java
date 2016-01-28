@@ -40,5 +40,5 @@ public interface DBInterface {
    */
   Set<BuchDTO> getBuchByTitle(String title);
 
-  Set<GebuehrDTO> getGebuehrenByUserId(long ID);
+  Set<GebuehrDTO> getGebuehrenByUserId(long id);
 }
