@@ -1,6 +1,8 @@
 package de.hrw.swep.biblio.persistence;
 
-import java.util.*;
+
+
+import java.util.Set;
 
 import de.hrw.swep.biblio.persistence.dto.BenutzerDTO;
 import de.hrw.swep.biblio.persistence.dto.BuchDTO;
@@ -39,6 +41,12 @@ public interface DBInterface {
    * @return die Buchobjekte
    */
   Set<BuchDTO> getBuchByTitle(String title);
+  
+  /**
+   * Liefert die Gebuehren eines Users
+   * @param id der Gebuehren
+   * @return die Gebuehrobjekte
+   */
 
   Set<GebuehrDTO> getGebuehrenByUserId(long id);
 }
