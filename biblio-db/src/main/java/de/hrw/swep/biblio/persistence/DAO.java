@@ -81,6 +81,7 @@ public class DAO implements DBInterface {
       while (rs.next()) {
         result.add(new BenutzerDTO(rs.getInt(1), rs.getString(2), rs.getString(3)));
       }
+
       return result;
     } catch (SQLException e) {
 
